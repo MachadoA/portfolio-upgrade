@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h3 {
+            overflow: hidden; /* Para garantir que o texto seja cortado */
+            border-right: 6px solid #000; /* Efeito do cursor piscando */
+            white-space: nowrap; /* Impede a quebra de linha */
+            margin: 0; /* Remove a margem padrão do h3 */
+            font-size: 1.5em; /* Tamanho da fonte, ajuste conforme necessário */
+            animation: typing 10s steps(20, end), blink-caret 10s step-start infinite;
+        }
+
+        /* Keyframes para a animação de digitação e piscar do cursor */
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+            25% {
+                width: 20%;
+            }
+            50% {
+                width: 5%;
+            }
+        }
+
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <select name="choose" id="choose">
+            <option value="pt">PT</option>
+            <option value="es">ES</option>
+        </select>
+    </aside>
+
+    <h3>Seu Texto Aqui</h3>
+
+    <!-- https://www.youtube.com/shorts/usL-w5B0jxI -->
+    <!-- https://www.youtube.com/watch?v=Y4-440Q9FDQ -->
+    <!-- https://www.youtube.com/results?search_query=animacion+letra+por+letra+con+css&sp=EgIIBQ%253D%253D -->
+
+    <script>
+        var choose = document.querySelector('#choose');
+
+        choose.addEventListener('change', () => {
+            let lenguage = choose.value
+            console.log(lenguage)
+            if (lenguage === 'es'){
+                location.href = "es/index.html"
+            }else{
+                location.href = "teste.html"
+            }
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+#projects{
+    background-color: #eaeaea;
+    height: auto;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.projects-container{
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+}
+.projects-container h2{
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.personal-projects h3{
+    text-align: left;
+    padding: 20px 0;
+}
+
+.presentation-projects{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.presentation-projects article{
+    outline: 1px solid #d3d2d2;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 15px;
+    width: 160px;
+    padding: 30px 0;
+}
+.presentation-projects article img{
+    box-sizing: border-box;
+    width: 150px;
+    height: 85px;
+    margin: auto;
+    border-radius: 5px;
+}
+.presentation-projects article h4{
+    padding-top: 20px;
+}
+.tecnology{
+    width: 160px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 20px 0;
+}
+.btn-view button{
+    background-color: #253142;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+}
+.btn-view button:hover{
+    background-color: #fff;
+    color: #253142;
+    font-weight: bold;
+    outline: 1px solid #253142;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .projects-container{
+        max-width: 700px;
+    }
+    .presentation-projects article{
+        width: 320px;
+    }
+    .presentation-projects article img{
+        width: 280px;
+        height: 150px;
+    }
+    .tecnology{
+        width: 320px;
+    }
+    .btn-view{
+        display: flex;
+        justify-content: space-around
+    }
+    .btn-view button{
+        letter-spacing: 1.5px;
+        padding: 10px 40px;
+    }
+  }
+  @media (min-width: 1024px){
+    .projects-container{
+        max-width: 900px;
+    }
+    .presentation-projects article{
+        width: 400px;
+        height: 372px;
+    }
+    .presentation-projects article img{
+        width: 360px;
+        height: 166px;
+    }
+    .tecnology{
+        width: 400px;
+    }
+    .btn-view{
+        display: flex;
+        justify-content: space-around
+    }
+    .btn-view button{
+        letter-spacing: 1.5px;
+        padding: 10px 60px;
+    }
+  }

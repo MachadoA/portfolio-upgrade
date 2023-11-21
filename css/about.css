@@ -1,0 +1,89 @@
+#about{
+    background-color: #eaeaea;
+    height: auto;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.conf-about{
+    max-width: 350px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    text-align: left;
+    padding-bottom: 25px;
+}
+.aboutme p,
+.aboutme h2{
+    margin-top: 15px;
+}
+.emphasis{
+  font-weight: bold;  
+}
+.btn-contact{
+    max-width: 250px;
+    width: 100%;
+    height: 40px;
+    background-color: #253142;
+    color: #fff;
+    letter-spacing: 1.5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn-contact:hover{
+    background-color: #fff;
+    color: #253142;
+    font-weight: bold;
+}
+.img-aboutme{
+    display: none;
+}
+.img-aboutme img{
+    border-radius: 30px;
+}
+
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .conf-about{
+        max-width: 700px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .img-aboutme{
+        display: block;
+    }
+    .aboutme p{
+    margin-top: 8px;
+    }
+    .btn-contact{
+        width: 450px;
+        height: 50px;
+        margin: 25px 50px;
+        background-color: #253142;
+        letter-spacing: 3px;
+        border-radius: 15px;
+    }
+  }
+  @media (min-width: 1024px){
+    .conf-about{
+        padding-top: 20px;
+        max-width: 900px;
+        gap: 20px;
+        align-items: center
+    }
+    .img-aboutme{
+        display: block;
+    }
+    .aboutme p{
+    margin-top: 10px;
+    }
+    .btn-contact{
+        width: 450px;
+        height: 50px;
+        margin: 25px 50px;
+        background-color: #253142;
+        letter-spacing: 3px;
+        border-radius: 15px;
+    }
+  }
