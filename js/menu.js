@@ -2,49 +2,44 @@ const btnMobile = document.getElementById('btn-mobile');
 const nav = document.querySelector('nav');
 
 btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu,);
+btnMobile.addEventListener('touchstart', toggleMenu);
 
 function toggleMenu(e){
     e.preventDefault();
 
-    if(e.type === 'touchstart'); 
-    nav.classList.toggle('active');
-
-    //Acessibilidade
-    const active =nav.classList.contains('active');
-    e.currentTarget.setAttribute('aria-label', active ? 'Close Menu' : 'Open Menu');
+    if(e.type === 'touchstart') {
+        nav.classList.toggle('active');
+        const active = nav.classList.contains('active');
+        e.currentTarget.setAttribute('aria-label', active ? 'Close Menu' : 'Open Menu');
+    }
 }
 
 document.querySelectorAll('.btn-menu').forEach((link) =>
     link.addEventListener("click", () => {
-        nav.classList.remove('active')
+        nav.classList.remove('active');
     })
-)
+);
 
-// const body = document.body;
-// const header = document.querySelector('header');
-// const scrollUp = "scroll-up";
-// const scrollDown = "scroll-down";
-// let lastScroll = 0;
+// Inicialize o ScrollReveal apenas uma vez
+const sr = ScrollReveal({ reset: true });
 
-// window.addEventListener("scroll", move, false);
+sr.reveal(".conf-about", {
+    duration: 2500,
+    move: 0,
+    // easing: "cubic-bezier(0.5, 0, 0, 1)",
+});
 
-// function move() {
-//     const currentScroll = window.scrollY;
+sr.reveal(".skills", {
+    duration: 2500,
+    scale: 0.85
+});
 
-//     if (currentScroll == 0) {
-//         body.classList.remove(scrollUp);
-//         return;
-//     }
+sr.reveal(".personal-projects", {
+    duration: 2500,
+    move: 0
+});
 
-//     if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
-//         ///down
-//         body.classList.remove(scrollUp);
-//         body.classList.add(scrollDown);
-//     } else if (currentScroll < lastScroll && body.classList.contains(scrollDown)){
-//         ///up
-//         body.classList.remove(scrollDown);
-//         body.classList.add(scrollUp);
-//     }
-//     lastScroll = currentScroll;
-// }
+sr.reveal(".contactme", {
+    duration: 2500,
+    scale: 0.85
+});
