@@ -24,7 +24,8 @@
 .presentation-projects{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    gap: 15px;
 }
 .presentation-projects article{
     outline: 1px solid #d3d2d2;
@@ -50,6 +51,7 @@
     flex-wrap: wrap;
     gap: 7px;
     padding: 20px 0;
+    margin: auto;
 }
 .btn-view button{
     background-color: #253142;
@@ -69,17 +71,22 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .projects-container{
-        max-width: 700px;
+        max-width: 750px;
+    }
+    .presentation-projects{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax( 220px, 1fr)); 
+        gap: 6px;
     }
     .presentation-projects article{
-        width: 320px;
+        width: 220px;
     }
     .presentation-projects article img{
-        width: 280px;
+        width: 200px;
         height: 150px;
     }
     .tecnology{
-        width: 320px;
+        width: 200px;
     }
     .btn-view{
         display: flex;
@@ -87,23 +94,29 @@
     }
     .btn-view button{
         letter-spacing: 1.5px;
-        padding: 10px 40px;
+        padding: 10px 30px;
     }
   }
   @media (min-width: 1024px){
     .projects-container{
-        max-width: 900px;
+        max-width: 950px;
+    }
+    .presentation-projects{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax( 300px, 1fr)); 
+        gap: 10px;
     }
     .presentation-projects article{
-        width: 400px;
+        /* width: 400px; */
+        width: 300px;
         height: 372px;
     }
     .presentation-projects article img{
-        width: 360px;
+        width: 290px;
         height: 166px;
     }
     .tecnology{
-        width: 400px;
+        width: 290px;
     }
     .btn-view{
         display: flex;
@@ -111,6 +124,6 @@
     }
     .btn-view button{
         letter-spacing: 1.5px;
-        padding: 10px 60px;
+        padding: 10px 45px;
     }
   }
