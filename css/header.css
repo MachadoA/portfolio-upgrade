@@ -21,6 +21,10 @@ header{
 .language{
     padding-right: 35%;
 }
+#choose{
+    border-radius: 8px;
+    padding: 2px;
+}
 
 
 .menu{
