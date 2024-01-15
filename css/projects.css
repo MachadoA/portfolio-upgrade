@@ -24,7 +24,7 @@
 .presentation-projects{
     display: flex;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 15px;
 }
 .presentation-projects article{
