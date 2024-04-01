@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700');
 
 @import url('about.css');
 @import url('contact.css');
 @import url('footer.css');
 @import url('header.css');
 @import url('presentation.css');
+@import url('swiper-bundle.min.css');
 @import url('projects.css');
 @import url('skills.css');
 
@@ -14,46 +16,65 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Source Sans 3', sans-serif;
 }
+
+:root{
+  --font-title: 'Source Sans 3', sans-serif;;
+  --font-body: "Fira Code", monospace; 
+  --color-background-white: #fdfdfd;
+  --color-background-black: #21252B;
+  --color-background-green: #467303;
+  --color-background-presentation: #090300;
+  --color-alert: #C24034;
+  --color-intermedio: #D9AD77;
+  --color-font-white: #dcdfe5;
+}
+
 body{
   max-width: 100%;
   overflow-x: hidden;
+  background-color: var(--color-background-black);
 }
 h1{
   text-transform: uppercase;
+  font-family: var(--font-title);
   font-size: 2.8rem;
-  color: #111;
+  color: var(--color-font-white);
 }
 h2{
   text-transform: uppercase;
   font-size: 2.2rem;
-  color: #111;
+  color: var(--color-intermedio);
+  font-family: var(--font-body);
 }
 h3{
+  font-family: var(--font-title);
   text-transform: uppercase;
   font-size: 1.6rem;
   letter-spacing: 1.5px;
 }
-p{
-  font-size: 1,6rem;
-  color: #555;
+h4{
+  font-family: var(--font-title);
+}
+p, li{
+  font-size: 1.2rem;
+  font-family: var(--font-body) !important;
+  color: var(--color-font-white);
 }
 
-a{color: inherit; cursor: pointer;}
+a{color: inherit; cursor: pointer; font-family: var(--font-body);}
 
 img, picture, video, canvas, svg {
   display: block;
 }
 
-input, button, textarea, select {
-  font: inherit;
+input, button, textarea, select, ul, li {
+  font: var(--font-body);
 }
 
 button{
   cursor: pointer;
 }
-
 
   /* breakpoints viewports */
   /* 375px 768px 1024px */

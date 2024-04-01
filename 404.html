@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 404</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container{
+            width: 100%;
+            height: 100%;
+        }
+        .container p{
+            text-align: center;
+            padding: 15px 0;
+        }
+        .title-mobile{
+            font-family: var(--font-body);
+            font-size: 1.2rem;
+            margin: auto;
+            padding: 15px 0;
+            text-align: center;
+        }
+        span{
+            color: var(--color-background-green);
+            font-family: var(--font-body) !important;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        picture {
+            max-width: 100%;
+            max-height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article>
+            <h1 class="title-mobile">Page not found</h1>
+            <picture>
+                <source media="(max-width: 350px)" srcset="img/dungeons-mobile-350.jpg">
+                <source media="(min-width: 351px) and (max-width:871px)" srcset="img/dungeons-mobile.jpg">
+                <source media="(min-width: 872px)" srcset="img/dungeons-2.jpg">
+                <img src="img/dungeons-2.jpg" alt="Imagem padrão">
+            </picture>
+            <p>That page does not exist but you can explore <span><a href="index.html">my personal page.</a></span></p>
+        </article>
+    </section>
+</body>
+</html>

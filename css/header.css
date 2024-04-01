@@ -6,8 +6,8 @@ header{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
-    color: #333;
+    background-color: var(--color-background-green);
+    color: var(--color-font-white);
     position: fixed;
     top: 0;
     width: 100%;
@@ -26,7 +26,6 @@ header{
     padding: 2px;
 }
 
-
 .menu{
     display: block;
     position: absolute;
@@ -39,7 +38,7 @@ header{
     height: 0px;
     visibility: visible;
     overflow-y: auto;
-    background-color: #fff;
+    background-color: var(--color-background-green);
 }
 .btn-menu{
     display: block;
@@ -58,18 +57,20 @@ header{
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: #000;
+    background-color: var(--color-background-presentation);
     visibility: hidden;
     transform: scaleX(1);
     -webkit-transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
     -webkit-transition: all 0.3s ease-in-out 0s;
 }
-.btn-menu:hover:before{
+.btn-menu:hover:before,
+.btn-menu.active:before{
     visibility: visible;
     transform: scaleX(1);
     -webkit-transform: scaleX(1);
 }
+
 nav.active .menu{
     height: calc(50vh - 80px);
 }
@@ -86,6 +87,7 @@ nav.active .menu{
 .hamburger{
     border-top: 2px solid;
     width: 20px;
+    color: #fff;
 }
 .hamburger::after,
 .hamburger::before{

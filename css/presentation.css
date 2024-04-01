@@ -1,8 +1,6 @@
 .presentation{
   margin: auto;
-  background-image: url(../img/fondo-cinzento.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-color: #090300;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -24,62 +22,56 @@
   flex-direction: column;
 }
 
-.image-main{
-  margin-top: 15px;
-  width: 365px;
-  max-width: 95%;
-  height: 209px;
-  position: relative;
-}
-
-.icon-js, 
-.icon-react,
-.icon-html,
-.icon-css{
-  width: 45px;
-  height: 45px;
-  position: absolute;
-}
-
-.icon-react{
-  top: 35px;
-  right: 55px;
-}
-.icon-js{
-  top: 85px;
-  right: 95px;
-} 
-.icon-html{
-  top: 140px;
-  right: 130px;
-}
-.icon-css{
-  top: 140px;
-  right: 55px;
-}
-
 .presentation-main{
   text-align: center;
   margin-top: 30px;
 }
 .presentation-main p{
-  margin-bottom: 20px;
-  font-weight: bold;
+  /* margin-bottom: 20px; */
+  /* font-weight: bold; */
+  color: #fff;
+  text-align: center;
+  margin: 30px auto;
 }
+.typewrite {
+  font-family: var(--font-title) !important;
+  border-right: 4px solid;
+  text-align: center;
+  width: 19ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(19) forwards, blinking 0.5s 3s infinite alternate; /* Adiciona a animação de piscar */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 19ch; /* Largura máxima */
+  }
+}
+
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
 .presentation-main h1{
   font-size: 2.1rem;
+  color: #fff;
 }
 .presentation-main button{
   width: 250px;
   height: 50px;
-  background-color: #253142;
+  background-color: #734434;
   color: #fff;
   letter-spacing: 1.5px;
   border-radius: 15px;
 }
 .presentation-main button:hover{
-  background-color: #fff;
-  color: #253142;
   font-weight: bold;
 }
 
@@ -91,40 +83,12 @@ transform-style: preserve-3d;
 backface-visibility: hidden;
 }
 
-
-
-
-
 @media(min-width: 768px) and (max-width:1023px){
   .animation-article{
       width: 760px;
       height: 580px;
   }
-  .image-main{
-      margin-top: 0px;
-      width: 500px;
-      height: auto;
-  }
   .presentation-main{ margin-top: 5px;}
-  /* .presentation-main p{
-      margin-bottom: 5px;
-  } */
-  .icon-react{
-      top: 160px;
-      right: 227px;
-  }
-  .icon-js{
-      top: 205px;
-      right: 262px;
-  } 
-  .icon-html{
-      top: 255px;
-      right: 297px;;
-  }
-  .icon-css{
-      top: 255px;
-      right: 227px;
-  }
   .presentation-main h1{font-size: 2.8rem}
 }
 @media(min-width: 1024px){
@@ -132,39 +96,8 @@ backface-visibility: hidden;
       width: 1000px;
       height: 580px;
   }
-  .image-main{
-      margin-top: 0px;
-      width: 600px;
-      height: auto;
-  }
   .presentation-main{
       margin-top: 0px;
-  }
-  /* .presentation-main p{
-      margin-bottom: 5px;
-  } */
-  .icon-js, 
-  .icon-react,
-  .icon-html,
-  .icon-css{
-      width: 50px;
-      height: 50px;
-  }
-  .icon-react{
-      top: 160px;
-      right: 300px;
-  }
-  .icon-js{
-      top: 220px;
-      right: 345px;
-  } 
-  .icon-html{
-      top: 281px;
-      right: 390px;
-  }
-  .icon-css{
-      top: 281px;
-      right: 300px;
   }
   .presentation-main h1{font-size: 2.8rem}
 }

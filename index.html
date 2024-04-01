@@ -5,46 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Portfolio Ana Amaral</title>
 
+    <title>Portfolio Ana Amaral</title>
+    
 </head>
 <body>
     <header>
         <a class="home" href="index.html">Home</a>
-        <div class="language">
+        <!-- <div class="language">
             <select name="choose" id="choose">
                 <option value="pt">PT</option>
                 <option value="es">ES</option>
             </select>
-        </div>
+        </div> -->
         <nav>
             <button id="btn-mobile" aria-label="Open Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
             <ul class="menu">
+                <li><a class="btn-menu" href="#home">Home</a></li>
                 <li><a class="btn-menu" href="#about">Sobre mim</a></li>
                 <li><a class="btn-menu" href="#skills">Skills</a></li>
                 <li><a class="btn-menu" href="#projects">Projectos</a></li>
                 <li><a class="btn-menu" href="#contact">Contactos</a></li>
-                <li><a class="btn-menu" href="/CV-PT-dez-2023.pdf" target="_blank">Resumo</a></li>
+                <li><a class="btn-menu" href="/CV-PT-mar-24.pdf" target="_blank">Resumo</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="presentation">
+        <section class="presentation" id="home">
             <div class="animation-article">
-                <img class="image-main" src="img/livroAoEcra.webp" alt="image book and computer">
-                
-                    <img class="icon-react" src="img/LogosReact.svg" alt="React logo">
-                    <img class="icon-js" src="img/JavaScript_logo_PNG__12_.svg" alt="JavaScript logo">
-                    <img class="icon-html"  src="img/LogosHtml5.svg" alt="HTML logo">
-                    <img class="icon-css"  src="img/LogoCss.svg" alt="CSS logo">
                 
                 <article class="presentation-main">
                     <h1>Olá, sou Ana Amaral</h1>
-                    <p>Frontend developer Junior</p>
-                    <button type="button" class="resume"><a  href="/CV-PT-dez-2023.pdf" target="_blank">Download Resumo</a></button>
+                    <p class="typewrite">Frontend Developer</p>
+
                 </article>
             </div>
         </section>
@@ -52,15 +49,12 @@
             <div class="conf-about">
                 <article class="aboutme">
                     <h2>Sobre mim</h2>
-                    <p>Comecei minha jornada profissional no curso de Especialização Profissional em Front-end Development, já concluído. Lá tive os primeiros contactos com HTML5, CSS3, Bootstrap, JavaScript, React e React Native.</p>
-                    <p>Após a especialização, busquei mais conhecimentos através de diversos cursos online como os de Gustavo Guanabara, Mateus Batistti , Sujeito Programador, Mouredev , Kevin Powell entre outros. </p>
-                    <p>A prática durante estágio proporcionou-me uma experiência sobre a rotina de desenvolvedor e, desde então, tenho buscado oportunidades no mercado de trabalho.</p>
-                    <p>Atualmente, produzo projetos pessoais e busco unir criatividade e funcionalidade para oferecer praticidades aos usuários. </p>
-                    <p>Convido-o a explorar alguns dos meus projetos em meus repositórios no <a class="emphasis" href="https://github.com/MachadoA">GitHub</a> e <a class="emphasis" href="https://www.frontendmentor.io/profile/MachadoA">Frontend Mentor</a>, onde poderá conhecer melhor meu trabalho e estilo de codificação. Aguardo contacto para discutir colaborações, oportunidades ou apenas para trocar ideias sobre o fascinante mundo do desenvolvimento front-end.</p>
-                    <p>Até breve!</p>
+                    <p>{Olá! Sou Ana Amaral e sou apaixonada pelo desenvolvimento front-end, com especialização em HTML5, CSS3, WordPress, JavaScript, React e React Native.</p>
+                    <p>Iniciei minha jornada com o curso de especialização em Desenvolvimento Front-end. Desde então, tenho me dedicado a aprimorar minhas habilidades, através de cursos online e treinos em plataforma do género. Atualmente, estou focada em desenvolver projetos pessoais, em busca de combinar criatividade e funcionalidade para proporcionar experiências excecionais aos usuários.</p>
+                    <p>Quer saber mais sobre mim? Visite meu perfil no <a href="https://www.linkedin.com/in/ana-machado-amaral-604462106/" target="_blank" class="link">LinkedIn</a> ou baixe meu <a href="CV-PT-mar-24.pdf" class="link">CV</a>}</p>
                 </article>
                 <article class="img-aboutme">
-                    <img src="img/me.webp" alt="">
+                    <img src="img/ola.png" alt="">
                 </article>
             </div>
             <button class="btn-contact"><a href="#contact">Contacte-me</a></button>
@@ -68,192 +62,279 @@
         <section id="skills">
             <article class="skills">
                 <h2>Skills</h2>
-                <div class="skills-name">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>SASS</p>
-                    <p>Bootstrap</p>
-                    <p>Responsive Design</p>
-                    <p>JavaScript</p>
-                    <p>React</p>
-                    <p>React Native</p>
-                    <p>Git</p>
-                    <p>GitHub</p>
-                </div>
+                <ul>
+                    <li>
+                        <h3>Soft Skills</h3>
+                        <ul class="skills-name">
+                            <li class="animated-itens">
+                                <img src="img/comunication.png" alt="comunication">
+                                <p>Comunicação</p>
+                            </li>
+                            <li class="animated-itens">
+                                <img src="img/creativy.png" alt="creativity">
+                                <p>Criatividade</p>
+                            </li>
+                            <li class="animated-itens">
+                                <img src="img/teams.png" alt="teams">
+                                <p>Trabalho em equipa</p>
+                            </li>
+                            <li class="animated-itens">
+                                <img src="img/e-learning.png" alt="e-learning">
+                                <p>Aprendizagem</p>
+                            </li>
+                            <li class="animated-itens">
+                                <img src="img/empathy.png" alt="empathy">
+                                <p>Empatia</p>
+                            </li>
+                            <li class="animated-itens">
+                                <img src="img/cooperation.png" alt="cooperation">
+                                <p>Colaboração</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3 id="tech-skills">Tech Skills</h3>
+                        <ul class="skills-name">
+                            <li class="animated-itens">
+                                <img src="img/htmlcss.png" alt="HTML CSS">
+                                <p>HTML e CSS</p>
+                            </li>
+                            <li class="animated-itens">
+                                <img src="img/bootstrap-sass.png" alt="bootstrap-sass">
+                                <p>Bootstrap e SASS</p>
+                            </li>
+                            <li class="animated-itens">
+                                <img src="img/js-icon.jpg" alt="JavaScript">
+                                <p>JavaScript</p>
+                            </li>
+                            <li class="animated-itens">
+                                <img src="img/react.png" alt="React">
+                                <p>React e React Native</p>
+                            </li>
+                            <li class="animated-itens">
+                                <img src="img/git e github.png" alt="Git GitHub">
+                                <p>Git e GitHub</p>
+                            </li>
+                            <li class="animated-itens">
+                                <img src="img/wordpress.png" alt="WordPress">
+                                <p>Wordpress</p>
+                            </li>
+                            <li class="animated-itens">
+                                <img src="img/php.png" alt="PHP">
+                                <p>PHP</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </article>
         </section>
         <section id="projects">
             <div class="projects-container">
                 <h2>Projectos</h2>
-
-                <section class="personal-projects">
-                    <h3>Últimos Projetos</h3>
-                    <div class="presentation-projects">
-                        <article>
-                            <img src="/img/gincana-lucas-atos.png" alt="study bible">
-                            <h4>Leitura Bíblica de Lucas e Atos</h4>
-                            <div class="tecnology">
-                                <p>React</p>
-                                <p>Routes</p>
-                                <p>Json</p>
-                            </div>
-                            <div class="btn-view">
-                                <a href="https://github.com/MachadoA/leitura-nov-dez" target="_blank"><button>Code</button></a>
-                                <a href="https://leituralucasatos.netlify.app/" target="_blank"><button>Site</button></a>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="img/api.png" alt="API Advice">
-                            <h4>Conselhos para o dia</h4>
-                            <div class="tecnology">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JS</p>
-                                <p>API externa</p>
-                                <p>FETCH</p>
-                            </div>
-                            <div class="btn-view">
-                                <a href="https://github.com/MachadoA/Advice-js" target="_blank"><button>Code</button></a>
-                                <a href="https://advice-js.netlify.app/" target="_blank"><button>Site</button></a>
-                            </div>
-                        </article>
+                
+                <section class="card-container swiper">
+                    
+                    <div class="card-content">
+                        <section class="swiper-wrapper">
+    
+                            <article class="swiper-slide card-article new-card">
+                                <img class="card-img" src="img/gincana-lucas-mobile.jpeg" alt="study bible">
+                                
+                                <h3 class="card-title">Leitura versão 2</h3>
+                                
+                                <ul class="card-description">
+                                    <li>React</li>
+                                    <li>Routes</li>
+                                    <li>Json</li>
+                                </ul>
+                                
+                                <div class="card-btn-view">
+                                    <button>
+                                        <a href="https://github.com/MachadoA/leitura-nov-dez" target="_blank">
+                                            <img class="icon-link" src="img/interface-html-g.png" alt="code in github">
+                                        </a>
+                                    </button>
+                                    <button>
+                                        <a href="https://leituralucasatos.netlify.app/" target="_blank">
+                                            <img class="icon-link" src="img/link-externo-g.png" alt="link to site">
+                                        </a>
+                                    </button>
+                                </div>
+                                
+                            </article>
+                            
+                            <article class="swiper-slide card-article">
+                                <img class="card-img" src="img/advices.jpg" alt="API Advice">
+                                
+                                <h3 class="card-title">Conselho do dia</h3>
+                                
+                                <ul class="card-description">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                    <li>API</li>
+                                </ul>
+    
+                                <div class="card-btn-view">
+                                    <button>
+                                        <a href="https://github.com/MachadoA/Advice-js" target="_blank">
+                                            <img class="icon-link" src="img/interface-html-g.png" alt="code in github">
+                                        </a>
+                                    </button>
+                                    <button>
+                                        <a href="https://advice-js.netlify.app/" target="_blank">
+                                            <img class="icon-link" src="img/link-externo-g.png" alt="link to site">
+                                        </a>
+                                    </button>
+                                </div>
+    
+                            </article>
+                            
+                            <article class="swiper-slide card-article">
+                                <img class="card-img" src="img/gincana joão.jpg" alt="study bible">
+    
+                                <h3 class="card-title">Leitura versão 1</h3>
+                                
+                                <ul class="card-description">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                    <li>JSON</li>
+                                </ul>
+    
+                                <div class="card-btn-view">
+                                    <button>
+                                        <a href="https://github.com/MachadoA/team-teenager" target="_blank">
+                                            <img class="icon-link" src="img/interface-html-g.png" alt="code in github">
+                                        </a>
+                                    </button>
+                                    <button>
+                                        <a href="https://gincanateenjoao.netlify.app/" target="_blank">
+                                            <img class="icon-link" src="img/link-externo-g.png" alt="link to site">
+                                        </a>
+                                    </button>
+                                </div>
+    
+                            </article>
+                            
+                            <article class="swiper-slide card-article">
+                                <img class="card-img" src="img/todo2.jpg" alt="todo list">
+                                
+                                <h3 class="card-title">Todo List</h3>
+                                
+                                <ul class="card-description">
+                                    <li>React</li>
+                                    <li>module.css</li>
+                                    <li>LocalStorage</li>
+                                </ul>
+                                
+                                <div class="card-btn-view">
+                                    <button>
+                                        <a href="https://github.com/MachadoA/Todo-List/tree/main" target="_blank">
+                                            <img class="icon-link" src="img/interface-html-g.png" alt="code in github">
+                                        </a>
+                                    </button>
+                                    <button>
+                                        <a href="https://todolistwithls.netlify.app/" target="_blank">
+                                            <img class="icon-link" src="img/link-externo-g.png" alt="link to site">
+                                        </a>
+                                    </button>
+                                </div>
+    
+                            </article>
+                            
+                            <article class="swiper-slide card-article">
+                                <img class="card-img" src="img/sorte.jpeg" alt="Fortune Cookie">
+                                
+                                <h3 class="card-title">Biscoito da sorte</h3>
+                                
+                                <ul class="card-description">
+                                    <li>React</li>
+                                    <li>module.css</li>
+                                    <li>axios</li>
+                                    <li>.env</li>
+                                </ul>
+    
+                                <div class="card-btn-view">
+                                    <button>
+                                        <a href="https://github.com/MachadoA/Biscoito-da-Fortuna" target="_blank">
+                                            <img class="icon-link" src="img/interface-html-g.png" alt="code in github">
+                                        </a>
+                                    </button>
+                                    <button>
+                                        <a href="https://biscoito-sabedorias.netlify.app/" target="_blank">
+                                            <img class="icon-link" src="img/link-externo-g.png" alt="link to site">
+                                        </a>
+                                    </button>
+                                </div>
+    
+                            </article>
+    
+                        </section>
                     </div>
-                </section>
-                <section class="personal-projects">
-                    <h3>Projetos Simples</h3>
-                    <div class="presentation-projects">
-                        <article>
-                            <img src="img/faq.png" alt="FAQ">
-                            <h4>FAQ com JS</h4>
-                            <div class="tecnology">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JS</p>
-                            </div>
-                            <div class="btn-view">
-                                <a href="https://github.com/MachadoA/JS-newbie/tree/main/faq-accordion-card-main" target="_blank"><button>Code</button></a>
-                                <a href="https://faq-accordion-card-newbie.netlify.app/" target="_blank"><button>Site</button></a>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="img/form.png" alt="">
-                            <h4>Formulário com validação de dados</h4>
-                            <div class="tecnology">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JS</p>
-                                <p>Regex</p>
-                            </div>
-                            <div class="btn-view">
-                                <a href="https://github.com/MachadoA/JS-newbie/tree/main/intro-component-with-signup-form" target="_blank"><button>Code</button></a>
-                                <a href="https://signup-form-newbie.netlify.app/" target="_blank"><button>Site</button></a>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/img/gincana bible.png" alt="study bible">
-                            <h4>Leitura Bíblica com informação diaria</h4>
-                            <div class="tecnology">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JS</p>
-                                <p>JSON</p>
-                            </div>
-                            <div class="btn-view">
-                                <a href="https://github.com/MachadoA/team-teenager" target="_blank"><button>Code</button></a>
-                                <a href="https://gincanateenjoao.netlify.app/" target="_blank"><button>Site</button></a>
-                            </div>
-                        </article>
+                    
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
                     </div>
-                </section>
-                <section class="personal-projects">
-                    <h3>Projetos em React</h3>
-                    <div class="presentation-projects">
-                        <article>
-                            <img src="img/todo.png" alt="todo list">
-                            <h4>Todo List</h4>
-                            <div class="tecnology">
-                                <p>React</p>
-                                <p>module.css</p>
-                                <p>LocalStorage</p>
-                            </div>
-                            <div class="btn-view">
-                                <a href="https://github.com/MachadoA/Todo-List/tree/main" target="_blank"><button>Code</button></a>
-                                <a href="https://todolistwithls.netlify.app/" target="_blank"><button>Site</button></a>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="img/fortuneCookieApp.png" alt="Fortune Cookie">
-                            <h4>Versão de Biscoito da sorte</h4>
-                            <div class="tecnology">
-                                <p>React</p>
-                                <p>module.css</p>
-                                <p>axios</p>
-                                <p>.env</p>
-                            </div>
-                            <div class="btn-view">
-                                <a href="https://github.com/MachadoA/Biscoito-da-Fortuna" target="_blank"><button>Code</button></a>
-                                <a href="https://biscoito-sabedorias.netlify.app/" target="_blank"><button>Site</button></a>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="/img/age-calculator.png" alt="todo list">
-                            <h4>Calculadora de idade</h4>
-                            <div class="tecnology">
-                                <p>React</p>
-                                <p>module.css</p>
-                                <p>Hooks</p>
-                            </div>
-                            <div class="btn-view">
-                                <a href="https://github.com/MachadoA/age-calculator" target="_blank"><button>Code</button></a>
-                                <a href="https://age-calculator-aa.netlify.app/" target="_blank"><button>Site</button></a>
-                            </div>
-                        </article>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
                     </div>
+                    
+                    <div class="swiper-pagination"></div>
+                    
                 </section>
             </div>
         </section>
         <section id="contact" class="contact">
             <div class="contactme">
                 <h2>Contacte-me</h2>
-                <form class="form" action="https://formspree.io/f/mkneqlde" method="post">
-                    <div class="custom-input">
-                        <label for="name"></label>
-                        <input class="input" type="text" id="name" name="name" aria-label="name"  placeholder="Nome">
-                        <img class="icon-error" src="img/icon-error.svg" alt="icon error">
-                        <p class="alert-error">Preencha o Nome</p>
-                    </div>
-                    <div class="custom-input">
-                        <label for="last-name"></label>
-                        <input class="input" type="text" id="last-name" name="lastName" aria-label="lastName"  placeholder="Apelido">
-                        <img class="icon-error" src="img/icon-error.svg" alt="icon error">
-                        <p class="alert-error">Preencha o Apelido</p>
-                    </div>
-                    <div class="custom-input">
-                        <label for="email"></label>
-                        <input class="input" type="email" id="email" name="email" aria-label="email" placeholder="E-mail">
-                        <img class="icon-error" src="img/icon-error.svg" alt="icon error">
-                        <p class="alert-error">Preencha o E-mail</p>
-                    </div>
-                    <div class="custom-input">
-                        <label for="subject"></label>
-                        <input class="input" type="text" id="subject" name="subject" aria-label="subject" placeholder="Assunto"/>
-                        <img class="icon-error" src="img/icon-error.svg" alt="icon error">
-                        <p class="alert-error">Preencha o Assunto</p>
-                    </div>
-                    <div class="custom-input">
-                        <label for="message"></label>
-                        <textarea class="input" name="message" id="message" cols="40" rows="8" aria-label="message" placeholder="Deixe a sua mensagem"></textarea>
-                        <img class="icon-error" src="img/icon-error.svg" alt="icon error">
-                        <p class="alert-error">Mensagem vazia</p>
-                    </div>
-                    <button type="submit" class="submit" aria-label="submit">Enviar</button>
-                    <article id="my-form-status">
-                        <img class="yes" src="img/yes.png" alt="icon yes" width="25" height="25">
-                        <p id="my-form-status-message"></p>
+                <div class="grid-form">
+                    <article class="descripted-contact">
+                        <p class="first-contact"><i class="ri-service-fill" style="color: #cd1717;"></i> Sou apaixonada por criar experiências web memoráveis.</p>
+                        <p><i class="ri-rocket-fill" style="color: rgb(55, 0, 255);"></i> Tenho trabalhado em projetos desafiadores para trazer à vida sites e aplicativos úteis.</p>
+                        <p class="third-contact"><i class="ri-bard-fill" style="color: yellow;"></i> Sinta-se à vontade para entrar em contato comigo! <i class="ri-bard-fill" style="color: yellow;"></i></p>
+                        <p>Email: <a href="mailto:anamachadoamaral@gmail.com">amachadoamaral@gmail.com</a></p>
                     </article>
-                </form>
+                    <form class="form" action="https://formspree.io/f/mkneqlde" method="post">
+                        <div class="custom-input">
+                            <label for="name"></label>
+                            <input class="input" type="text" id="name" name="name" aria-label="name"  placeholder="Nome" autocomplete="name">
+                            <img class="icon-error" src="img/icon-error.svg" alt="icon error">
+                            <p class="alert-error">Preencha o Nome</p>
+                        </div>
+                        <div class="custom-input">
+                            <label for="last-name"></label>
+                            <input class="input" type="text" id="last-name" name="lastName" aria-label="lastName"  placeholder="Apelido" autocomplete="family-name">
+                            <img class="icon-error" src="img/icon-error.svg" alt="icon error">
+                            <p class="alert-error">Preencha o Apelido</p>
+                        </div>
+                        <div class="custom-input">
+                            <label for="email"></label>
+                            <input class="input" type="email" id="email" name="email" aria-label="email" placeholder="E-mail" autocomplete="email" />
+                            <img class="icon-error" src="img/icon-error.svg" alt="icon error">
+                            <p class="alert-error">Preencha o E-mail</p>
+                        </div>
+                        <div class="custom-input">
+                            <label for="subject"></label>
+                            <input class="input" type="text" id="subject" name="subject" aria-label="subject" placeholder="Assunto" autocomplete="off"/>
+                            <img class="icon-error" src="img/icon-error.svg" alt="icon error">
+                            <p class="alert-error">Preencha o Assunto</p>
+                        </div>
+                        <div class="custom-input">
+                            <label for="message"></label>
+                            <textarea class="input" name="message" id="message" cols="40" rows="8" aria-label="message" placeholder="Deixe a sua mensagem" autocomplete="off"></textarea>
+                            <img class="icon-error" src="img/icon-error.svg" alt="icon error">
+                            <p class="alert-error">Mensagem vazia</p>
+                        </div>
+                        <button type="submit" class="submit" aria-label="submit">Enviar</button>
+                        <article id="my-form-status">
+                            <img class="yes" src="img/yes.png" alt="icon yes" width="25" height="25">
+                            <p id="my-form-status-message"></p>
+                        </article>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -261,7 +342,7 @@
         <div class="footer">
             <article class="footer-phrase">
                 <h3>Ana Amaral</h3>
-                <p>Uma desenvolvedora focada em Frontend e Aplicações Mobile</p>
+                <p>Desenvolvedora focada em Frontend e Aplicações Mobile</p>
             </article>
             <article class="footer-social">
                 <h3>Social</h3>
@@ -273,12 +354,15 @@
                 </ul>
             </article>
         </div>
-        <p>November 2023.</p>
+        <p id="current-date"></p>
     </footer>
     
     <script src="js/form.js"></script>
-    <script src="js/animation-presentation.js"></script>
+    <script src="js/scroll-animation.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/carousel.js"></script>
     <script src="js/language.js"></script>
+    <script src="js/datefooter.js"></script>
 </body>
 </html>
